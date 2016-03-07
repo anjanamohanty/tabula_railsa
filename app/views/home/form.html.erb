@@ -22,9 +22,11 @@
         <li class="item">
           <%= check_box_tag :puppies %> I like <%= label_tag :puppies %>
         </li>
-        <li class="item">
-          <%= check_box_tag :cold_hard_cash %> I like <%= label_tag :cold_hard_cash %>
-        </li>
+        <% if Rails.env.development? %>
+          <li class="item">
+            <%= check_box_tag :cold_hard_cash %> I like <%= label_tag :cold_hard_cash %>
+          </li>
+        <% end %>
       </ul>
     </div>
     <%= submit_tag %>
