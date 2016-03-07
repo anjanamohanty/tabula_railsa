@@ -32,4 +32,12 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'faker', '~> 1.6', '>= 1.6.3'
+end
+
+group :production do
+
+  gem 'puma', '~> 3.1'
+
 end
