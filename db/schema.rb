@@ -11,6 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160308150115) do
+
+  create_table "survey_responses", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "puppies"
+    t.boolean  "rainbows"
+    t.boolean  "chocolate"
+    t.boolean  "cold_hard_cash"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
 end
