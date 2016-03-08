@@ -32,7 +32,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '1.6.4'
 
   gem 'faker', '~> 1.6', '>= 1.6.3'
 end
