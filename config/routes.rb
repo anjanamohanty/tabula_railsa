@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#form'
-  get 'home/form'
-  post 'home/thank_you'
+  root 'home#new'
+  get 'home/new'
+  post 'home/create'
 end
